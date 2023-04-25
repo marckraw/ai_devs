@@ -1,12 +1,5 @@
-import { read } from 'fs'
-import {hey} from './helper.js'
-import something from './helper.cjs'
-import dotenv from 'dotenv';
+import './config.js'
+import {task1} from "./tasks/task-1.js";
 
-dotenv.config()
 
-console.log(something)
-hey("Marcin")
-
-console.log(process.env.apiKey)
-
+await task1()
