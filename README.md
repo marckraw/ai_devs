@@ -1,3 +1,4 @@
-# Node18 + module + TS
+# AI_devs Training :) 
 
-This is just core node18 repo with modules support and TS
+
+
