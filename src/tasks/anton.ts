@@ -1,5 +1,3 @@
-import {requestTask, requestToken, submitAnswer} from "../helper.js";
-import chalk from "chalk";
 import axios from "axios";
 
 export const anton = async () => {

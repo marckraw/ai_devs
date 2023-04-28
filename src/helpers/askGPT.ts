@@ -17,9 +17,9 @@ const configuration = new Configuration({
 
 const openai = new OpenAIApi(configuration)
 
-export const askGPT = async ({message}: {message: string}) => {
+export const askGPT = async ({system, message}: {system?: string, message: string}) => {
     const messages: ChatCompletionRequestMessage[] = [
-      { role: 'system', content: 'You are amazing AI.' },
+        { role: 'system', content: system ? system : 'You are amazing AI.' },
       { role: 'user', content: message },
     ]
 

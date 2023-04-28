@@ -1,6 +1,5 @@
 import {requestTask, requestToken, submitAnswer} from "../helper.js";
 import chalk from "chalk";
-import {askGPT} from "../helpers/askGPT.js";
 import {moderation} from "../helpers/moderation.js";
 
 export const task2 = async () => {
