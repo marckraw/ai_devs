@@ -33,7 +33,7 @@ export const requestTask = async (token: string) => {
     }
 }
 
-export const submitAnswer = async (token: string, answer: string) => {
+export const submitAnswer = async (token: string, answer: any) => {
     const url = `https://zadania.aidevs.pl/answer/${token}`
 
     const body = { answer }

@@ -1,0 +1,31 @@
+
+GET https://api.openai.com/v1/models
+Content-Type: application/json
+Authorization: Bearer {{OpenAPI_KEY}}
+
+###
+
+# Anton Web Hook
+GET https://hook.eu1.make.com/d7qs0eumj8iyvmh7xkpgvt1xy1fjnur0
+
+###
+
+// Anton message to slack
+POST https://hook.eu1.make.com/d7qs0eumj8iyvmh7xkpgvt1xy1fjnur0
+Content-Type: application/json
+
+{
+  "authorizationToken": {{authorizationToken}},
+  "message": "Hello Anton! How are you ? Can you introduce yourself ?"
+}
+
+###
+
+// Ask Anton
+POST https://hook.eu1.make.com/qyda7f89frxhvla9wp2sn8dsk5xqt7e5
+Content-Type: application/json
+
+{
+  "authorizationToken": {{authorizationToken}},
+  "message": "Hello Anton! How are you ? Can you introduce yourself ?"
+}
