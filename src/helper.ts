@@ -2,7 +2,8 @@ import axios from 'axios'
 import {API_KEY} from './constants.js'
 
 export const requestToken = async (taskName: string) => {
-    const url = `https://zadania.aidevs.pl/token/${taskName}`
+    const aiDevsUrl = process.env.AI_DEVS_URL;
+    const url = `${aiDevsUrl}/token/${taskName}`
 
     const body = { apikey: API_KEY }
 
@@ -19,7 +20,8 @@ export const requestToken = async (taskName: string) => {
 }
 
 export const requestTask = async (token: string) => {
-    const url = `https://zadania.aidevs.pl/task/${token}`
+    const aiDevsUrl = process.env.AI_DEVS_URL;
+    const url = `${aiDevsUrl}/task/${token}`
 
     try {
         const result = await axios.get(url)
@@ -34,7 +36,8 @@ export const requestTask = async (token: string) => {
 }
 
 export const submitAnswer = async (token: string, answer: any) => {
-    const url = `https://zadania.aidevs.pl/answer/${token}`
+    const aiDevsUrl = process.env.AI_DEVS_URL;
+    const url = `${aiDevsUrl}/answer/${token}`
 
     const body = { answer }
 
