@@ -3,6 +3,8 @@ import chalk from "chalk";
 
 export const task1 = async () => {
     const { token } = await requestToken('helloapi')
+    console.log("task 1 token: ")
+    console.log(token)
     if(token) {
         const task = await requestTask(token)
         console.log(chalk.blue("This is task: "))
