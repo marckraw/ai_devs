@@ -2,12 +2,13 @@
 # yarn lockfile v1
 
 
-"@mrck-labs/anton-sdk@^0.0.10":
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/@mrck-labs/anton-sdk/-/anton-sdk-0.0.10.tgz#aec246756e544c13df7d45f9cd2944b8770774c0"
-  integrity sha512-Ff+xGtwY6Q6tgp0vfHza1JLoSIzhl7PZwbM/G9fut+A6UwtzByBMEfpNurn/LcqSfnsXXq23o2WoHOIu7XRGYQ==
+"@mrck-labs/anton-sdk@^0.0.13":
+  version "0.0.13"
+  resolved "https://registry.yarnpkg.com/@mrck-labs/anton-sdk/-/anton-sdk-0.0.13.tgz#9bd0c9a3dddc2219b7dda6e5424255bede01a0aa"
+  integrity sha512-afgngn/n7HPxs6HoAuHYEqLD9anNQiZKJusaGCKP05SugKwP3VewOaRIsGS7CkeoInjtEH1FduAs+lJKfz/Oqg==
   dependencies:
     openai "^4.16.1"
+    tiktoken "^1.0.10"
     tslib "^2.3.0"
 
 "@types/chalk@^2.2.0":
@@ -257,6 +258,11 @@ proxy-from-env@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/proxy-from-env/-/proxy-from-env-1.1.0.tgz#e102f16ca355424865755d2c9e8ea4f24d58c3e2"
   integrity sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==
+
+tiktoken@^1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/tiktoken/-/tiktoken-1.0.10.tgz#d5ade07bc19f4424c404646b606e64674b0df5ef"
+  integrity sha512-gF8ndTCNu7WcRFbl1UUWaFIB4CTXmHzS3tRYdyUYF7x3C6YR6Evoao4zhKDmWIwv2PzNbzoQMV8Pxt+17lEDbA==
 
 tr46@~0.0.3:
   version "0.0.3"
