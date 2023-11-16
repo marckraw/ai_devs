@@ -6,17 +6,16 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "start": "yarn build && node dist/index.js"
+    "clean": "rm -rf dist",
+    "start": "yarn clean && yarn build && node --env-file=.env dist/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/chalk": "^2.2.0",
-    "@types/dotenv": "^8.2.0",
     "@types/node": "^20.8.10",
     "axios": "^1.6.0",
-    "dotenv": "^16.3.1",
     "typescript": "^5.2.2"
   },
   "dependencies": {

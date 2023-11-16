@@ -1,4 +1,3 @@
-import "../helpers/env-config.js"
 import {requestTask, requestToken, submitAnswer} from "../helper.js";
 import chalk from "chalk";
 import {anton} from '../helpers/anton.singleton.js'

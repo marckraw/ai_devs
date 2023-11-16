@@ -1,4 +1,3 @@
-import './config.js'
 import {task1} from "./tasks/task-1.js";
 import {task2} from "./tasks/task-2.js";
 import {task3} from "./tasks/task-3.js";
