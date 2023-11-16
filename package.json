@@ -20,7 +20,7 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
-    "@mrck-labs/anton-sdk": "^0.0.13",
+    "@mrck-labs/anton-sdk": "^0.0.14",
     "chalk": "^5.3.0",
     "openai": "^3.2.1"
   }
