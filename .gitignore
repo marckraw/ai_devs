@@ -4,3 +4,6 @@
 .vscode
 dist
 node_modules
+
+.yalc
+yalc.lock
