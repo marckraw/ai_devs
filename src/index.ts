@@ -4,6 +4,7 @@ import {task3} from "./tasks/task-3.js";
 import {task4} from "./tasks/task-4.js";
 import {task5} from "./tasks/task-5.js";
 import {task6} from "./tasks/task-6-embedding.js";
+import {task7} from "./tasks/task-7-whisper.js";
 
 
 switch (process.argv[2]) {
@@ -24,5 +25,8 @@ switch (process.argv[2]) {
         break;
     case 'task-6':
         await task6()
+        break;
+    case 'task-7':
+        await task7()
         break;
 }
